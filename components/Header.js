@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 const headerStyles = {
   padding: '0 0 20px',
-  marginBottom: '20px',
   background: '#ffffff'
 }
 
