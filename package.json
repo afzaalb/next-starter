@@ -1,0 +1,23 @@
+{
+  "name": "next-starter",
+  "version": "1.0.0",
+  "description": "Introduction to NextJS | For beginners",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "next",
+    "beginner",
+    "basics",
+    "intro"
+  ],
+  "author": "Muhammad Afzaal",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
