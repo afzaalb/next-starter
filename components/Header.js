@@ -17,6 +17,9 @@ const Header = () => (
       <Link href="/contact">
         <a style={{margin:'12px'}}>Contact Us</a>
       </Link>
+      <Link href="/team">
+        <a style={{margin:'12px'}}>Team</a>
+      </Link>
     </nav>
   </header>
 )
