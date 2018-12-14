@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
+import map from 'lodash/map'
 
 const PostLink = props => (
   <li>
@@ -14,9 +15,9 @@ const Index = props => (
   <Layout>
     <h3>Posts List</h3>
     <ul>
-      {props.posts.map(post => (
-        <PostLink key={post.id} id={post.id} title={post.title} message={post.body} />
-      ))}
+      {
+        map(props.posts, post => <PostLink key={post.id} id={post.id} title={post.title} body={post.body} />)
+      }
     </ul>
   </Layout>
 )
