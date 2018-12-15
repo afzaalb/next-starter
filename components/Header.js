@@ -1,26 +1,36 @@
 import Link from 'next/link';
 
-const headerStyles = {
-  padding: '0 0 20px',
-  background: '#ffffff'
-}
-
 const Header = () => (
-  <header style={headerStyles}>
+  <header>
     <nav>
       <Link href="/">
-        <a style={{margin:'12px'}}>Home</a>
+        <a>Home</a>
       </Link>
       <Link href="/about">
-        <a style={{margin:'12px'}}>About Us</a>
+        <a>About Us</a>
       </Link>
       <Link href="/contact">
-        <a style={{margin:'12px'}}>Contact Us</a>
+        <a>Contact Us</a>
       </Link>
       <Link href="/team">
-        <a style={{margin:'12px'}}>Team</a>
+        <a>Team</a>
       </Link>
     </nav>
+    <style jsx>{`
+      header{
+        background: #ffffff;
+        padding: 0 0 20px;
+      }
+      a{
+        font-weight: 700;
+        margin: 0 10px;
+        text-transform: uppercase;
+      }
+      nav{
+        display: flex;
+        justify-content: center;
+      }
+    `}</style>
   </header>
 )
 

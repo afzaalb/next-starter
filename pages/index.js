@@ -2,23 +2,35 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import map from 'lodash/map'
+import capitalize from 'lodash/capitalize'
 
 const PostLink = props => (
   <li>
     <Link as={`/p/${props.id}`} href={`/post?id=${props.id}`}>
-      <a>{props.title}</a>
+      <a>{capitalize(props.title)}</a>
     </Link>
   </li>
 )
 
 const Index = props => (
   <Layout>
-    <h3>Posts List</h3>
+    <h2>Posts List</h2>
     <ul>
       {
         map(props.posts, post => <PostLink key={post.id} id={post.id} title={post.title} body={post.body} />)
       }
     </ul>
+    <style jsx>{`
+      ul{
+        list-style-type: inside;
+        padding-left: 18px;
+        margin: 0;
+      }
+      h2{
+        margin: 0 0 15px;
+        line-height: 1.2;
+      }
+    `}</style>
   </Layout>
 )
 
