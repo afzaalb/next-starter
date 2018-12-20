@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Contact = () => (
   <Layout>
-    <h2>This is the Contact page</h2>
+    <h4>This is the Contact page</h4>
   </Layout>
 )
 

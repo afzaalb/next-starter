@@ -11,15 +11,8 @@ const Layout = props => (
         font-family: Avenir,Ubuntu,Arial,sans-serif;
         background: #f4f5f6;
         color: #333;
-        max-width: 420px;
+        max-width: 480px;
         margin: 25px auto;
-      }
-      a {
-        text-decoration: none;
-        color: blue;
-      }
-      a:hover {
-        opacity: 0.6;
       }
       .content{
         padding: 20px;
