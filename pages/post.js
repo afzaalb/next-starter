@@ -4,17 +4,8 @@ import capitalize from 'lodash/capitalize'
 
 const Post = props => (
     <Layout>
-        <h2>{capitalize(props.title)}</h2>
+        <h4>{capitalize(props.title)}</h4>
         <p>{capitalize(props.body)}</p>
-        <style jsx>{`
-            h2{
-                margin: 0 0 15px;
-                line-height: 1.2;
-            }
-            p{
-                margin: 0;
-            }
-        `}</style>
     </Layout>
 )
 
